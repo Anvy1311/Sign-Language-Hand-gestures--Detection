@@ -1,0 +1,11 @@
+The  gestures included in the Project for now are basic and we can add more ASL in this.
+okay
+peace
+hello how are you?
+thumbs down
+call me
+stop
+rock
+live long
+fist
+smile

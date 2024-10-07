@@ -9,3 +9,15 @@ from tensorflow.keras.models import load_model
 mpHands = mp.solutions.hands
 hands = mpHands.Hands(max_num_hands=1, min_detection_confidence=0.7)
 mpDraw = mp.solutions.drawing_utils
+
+#loading the gesture recognizing model
+model=load_model('mp_hand_gesture')
+
+#Loading classes
+f=open('gesture.names' , 'r')
+classNames=f.read().split('\n')
+f.close()
+print(classNames)
+
+# Initialize the webcam
+cap = cv2.VideoCapture(0)
